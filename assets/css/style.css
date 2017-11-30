@@ -1,14 +1,13 @@
-body {
-	background:#eee;
-	color:#777777;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	margin:0px;
-
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-.wrapper {
-	min-height: 100%;
-	margin-bottom:-50px;
+body {
+	background-image: url("../images/dust_scratches.png");
+	background-color:#eee;
+	color:#777777;
+	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 a {
@@ -16,16 +15,33 @@ a {
 	text-decoration:none;
 }
 
+a:hover { 
+    text-decoration: underline;
+    color: #4AAAA5; /*Teal*/
+}
+
+/*This section necessary for sticky footer*/
+.body-content {
+  min-height: 100%;
+  margin-bottom: -85px;
+}
+
 
 header {
 	border-bottom: 1px solid #cccccc;
-	background:white;
+	background:#ffffff;
 	height:80px;
+	width:100%;
+}
+
+.headcontainer {
+	width: 960px;
+	margin: auto;
 }
 
 h1, h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	color:#4aaaa5;
+	color:#4aaaa5; /*teal*/
 	font-weight:bold;
 }
 
@@ -34,11 +50,10 @@ h1 {
 }
 
 .h1border {
-	border-bottom: 1px solid #cccccc;
-	margin-bottom: 10px;
-
+	border-bottom: 2px solid #cccccc;
+	padding-bottom:10px;
+	margin-bottom: 20px;
 }
-
 
 h2 {
 	font-size:20px;
@@ -46,11 +61,11 @@ h2 {
 
 .h2border {
 	border-bottom: 1px solid #cccccc;
-	margin-bottom: 10px;
+	padding-bottom:10px;
+	margin-bottom: 20px;
 }
 
 .name {
-	margin-left: 200px;
 	height:40px;
 	width: 200px;
 	padding:20px;
@@ -61,14 +76,16 @@ h2 {
 }
 
 .name h1 {
-	color: white;
+	color: #ffffff;
 	font-weight:normal;
+	line-height:45px;
 }
 
 nav {
-	float:left;
+	float:right;
+	color: #dddddd;
 	word-spacing: 10px;
-	margin: 20px 20px 20px 400px;
+	margin: 20px 20px 20px 0px;
 	text-align:center;
 	height:auto;
 }
@@ -80,34 +97,84 @@ nav:after {
 }
 
 main {
-	width: 100%;
+	width: 960px;
+	height:100%;
 	margin: auto;
-	min-height: 500px;
+	overflow:scroll;
 }
 
 section {
-	border: 1px solid #cccccc;
-	background:white;
-	width: 500px;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	width: 588px;
 	float: left;
-	margin: 30px 0px 0px 200px;
+	margin: 30px 25px 30px 0px;
 	padding: 30px;
 	line-height: 1.5;
 
 }
 
+.cimg {
+	margin: 10px auto 40px auto;
+}
+
+.floatl {
+	float:left;
+	position: relative;
+}
+
+.floatr {
+	float: right;
+	position: relative;
+	
+}
+
+.pimg {
+	width:275px;
+	height:206px;
+}
+
+.cimg:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+figcaption {
+	position:relative;
+	text-align: center;
+	color:white;
+	height: 50px;
+	top: -45px;
+	margin: 195px 10px 0px 5px;
+	background-color: #4aaaa5;
+}
+
+.overlay {
+	position: absolute;
+   left: 5px;
+   bottom: 7px;
+   z-index: 1;
+   color:white;
+   background-color: #4aaaa5;
+   padding: 14px;
+   width: 247px;
+   text-align:center;
+}
+
 section img {
 	float:left;
-	padding-right: 10px;
+	margin: 0px 10px 0px 5px;
 }
 
 aside {
 	border: 1px solid #cccccc;
-	background:white;
+	background: #ffffff;
 	float: left;
-	margin: 30px 0px 0px 30px;
+	margin: 30px 0px 0px 5px;
 	padding: 30px;
 	text-align:center;
+	width: 208px;
 }
 
 li {
@@ -117,18 +184,34 @@ li {
 .social img {
 	height: 60px;
 	width: 60px;
+	margin: 0px 2px 0px 2px;
+}
+
+input, textarea {
+	border: 1px solid #cccccc;
+	font-size: 120%;
+}
+
+input[type=submit] {
+	background-color:#4aaaa5;
+	border: 1px solid #cccccc;
+	color: #ffffff;
+	font-size: 15px;
+	padding:10px 20px 10px 20px;
+	cursor: pointer;
+}
+
+.footer-margin {
+  height: 85px;
 }
 
 footer {
-	position:fixed;
 	border-top: 6px solid #4aaaa5;
 	text-align: center;
 	background:#666666;
 	padding: 35px;
 	color:#eee;
 	font-size:50%;
-	width: 100%;
-	bottom: 0px;
 }
 
 .copyright{
