@@ -1,75 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
-	<title>Contact Me</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Contact</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
+
 <body>
-	<div class="body-content">
-		
-		<header>
-			<div class="head-container">
-				<div class="name">
-					<h1>Sam Stover</h1>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="index.html">About</a> |</li>
-						<li><a href="portfolio.html">Portfolio</a> |</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand name" href="index.html">Sam Stover</a>
 			</div>
-		</header>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="index.html">About</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-		<main>
-			<section>
-				<div class="h2border"><h2>Contact</h2></div>
-					<form action="#">
-						<div>Name:<br />
-							<input type="text" name="name" size="57" maxlength="56" />
-						</div>
-						<div>Email:<br />
-							<input type="email" name="email" size="57" maxlength="56" />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 main-section footer-extra-help">
+				<div class="page-header">
+					<h1 class="section-header">Contact</h1>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<form action="#">
+							<div class="form-group">
+								<div>Name:
+									<br />
+									<input type="text" name="name" size="57" maxlength="56" />
+								</div>
+								<div>Email:
+									<br />
+									<input type="email" name="email" size="57" maxlength="56" />
+								</div>
+								<div>Message:
+									<br />
+									<textarea name="message" cols="56" rows="10"></textarea>
+								</div>
+								<div>
+									<input type="submit" name="submit" value="Submit" />
+								</div>
 							</div>
-						<div>Message:<br />
-							<textarea name="message" cols="56" rows="10"></textarea>
-						</div>
-						<div><input type="submit" name="submit" value="Submit" />
-						</div>
-					</form>
-			</section>
+						</form>
+					</div>
+				</div>
+			</div>
 
-			<aside>
-				<div class="h3border"><h3>Connect with Me</h3></div>
-				<ul class="social">
-					<li>
-						<a href="https://github.com/stoversa" target="_blank" title="GitHub">
-							<img src="assets/images/github.png" alt="GitHub">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/samuelstover" target="_blank" title="LinkedIn">
-							<img src="assets/images/linkedin.png" alt="LinkedIn">
-						</a>
-					</li>
-					<li>
-						<a href="https://stackoverflow.com/users/8909974/stoversa?tab=profile" target="_blank" title="StackOverflow">
-							<img src="assets/images/overflow.png" alt="StackOverflow">
-						</a>
-					</li>
-				</ul>
-			</aside>
-
-		</main>
-		<div class="footer-margin"></div>
+			<div class="col-md-4 footer-extra-help">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Connect with Me</h3>
+					</div>
+					<div class="panel-body">
+						<ul class="list-inline">
+							<li>
+								<a href="https://github.com/stoversa" target="_blank" title="GitHub">
+									<img class="social-img" src="assets/images/github.png" alt="GitHub">
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/samuelstover" target="_blank" title="LinkedIn">
+									<img class="social-img" src="assets/images/linkedin.png" alt="LinkedIn">
+								</a>
+							</li>
+							<li>
+								<a href="https://stackoverflow.com/users/8909974/stoversa?tab=profile" target="_blank" title="StackOverflow">
+									<img class="social-img" src="assets/images/overflow.png" alt="StackOverflow">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<footer>
-		<div class="copyright">&#169; Copyright 2017 Samuel Stover</div>
+	<footer class="footer">
+		<div class="copyright">
+			&#169; Copyright 2017 Samuel Stover
+		</div>
 	</footer>
 
+	<!-- Necessary Bootstrap Jquery/JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
+
 </html>

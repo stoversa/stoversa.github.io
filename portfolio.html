@@ -1,121 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
+
 <body>
-	<div class="body-content">
-		
-		<header>
-			<div class="head-container">
-				<div class="name">
-					<h1>Sam Stover</h1>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="index.html">About</a> |</li>
-						<li><a href="portfolio.html">Portfolio</a> |</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand name" href="index.html">Sam Stover</a>
 			</div>
-		</header>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="index.html">About</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-		<main>
-			<section>
-				<div class="h2border"><h2>Portfolio</h2></div>
-					<div class="cimg">
-
-						<figure class="floatl">
-							<a href="https://stoversa.github.io/Hangman-Game/" target="_blank">
-								<img class="pimg" src="assets/images/coffee.jpg" alt="Cover Image">
-								<div class="overlay">Hangman</div>
-							</a>
-						</figure>
-
-						<figure class="floatr">
-							<a href="https://stoversa.github.io/week-4-game/" target="_blank">
-								<img class="pimg" src="assets/images/book2.jpg" alt="RPG Game">
-								<div class="overlay">RPG Game</div>
-							</a>
-						</figure>
-						
+	<div class="container ">
+		<div class="row">
+			<div class="col-md-8 main-section footer-extra-help">
+				<div class="page-header">
+					<h1 class="section-header">Portfolio</h1>
 				</div>
-					<div class="cimg">
-
-						<figure class="floatl">
-							<a href="https://stoversa.github.io/TriviaGame/" target="_blank">
-								<img class="pimg" src="assets/images/student.jpg" alt="Trivia Game">
-								<div class="overlay">Trivia Game</div>
-							</a>
-						</figure>
-
-						<figure class="floatr">
-							<a href="https://stoversa.github.io/GifTastic-App/" target="_blank">
-								<img class="pimg" src="assets/images/typewriter.jpg" alt="Giffy Image Generator">
-								<div class="overlay">Giffy API App</div>
-							</a>
-						</figure>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6 portfolo-col">
+								<a href="https://stoversa.github.io/Hangman-Game/" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/coffee.jpg" alt="hangman">
+									<div class="caption">
+										Hangmnan
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 portfolo-col">
+								<a href="https://stoversa.github.io/week-4-game/" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/desk.jpg" alt="RPG">
+									<div class="caption">
+										RPG Game
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 portfolo-col">
+								<a href="https://stoversa.github.io/TriviaGame/" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/student.jpg" alt="Trivia Game">
+									<div class="caption">
+										Trivia Game
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 portfolo-col">
+								<a href="https://stoversa.github.io/GifTastic-App/" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/typewriter.jpg" alt="Giffy Image Generator">
+									<div class="caption">
+										Giffy API App
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 portfolo-col">
+								<a href="https://github.com/stoversa/Constructor-Hangman" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/scrabble.jpg" alt="trivia game">
+									<div class="caption">
+										Constructor Hang Man
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 portfolo-col">
+								<a href="https://github.com/stoversa/liri-node-app" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/liri.jpg" alt="Liri App">
+									<div class="caption">
+										Liri Bash Assistant
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 portfolo-col">
+								<a href="https://github.com/stoversa/node_storefront" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/bamazonManager.gif" alt="Node Storefront">
+									<div class="caption">
+										Node Storefront
+									</div>
+								</a>
+							</div>
+							<div class="col-md-6 portfolo-col">
+								<a href="https://friendfinder-stoversa.herokuapp.com/" class="thumbnail" target="_blank">
+									<img class="portfolio-img" src="assets/images/friends.jpg" alt="Friend Finder">
+									<div class="caption">
+										Friend Finder
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
+			</div>
 
-				<div class="cimg">
-
-						<figure class="floatl">
-							<a href="https://github.com/stoversa/Constructor-Hangman" target="_blank">
-								<img class="pimg nofloat" src="assets/images/scrabble.jpg" alt="Constructor Hang Man">
-								<div class="overlay">Constructor Hang Man</div>
-							</a>
-						</figure>
-
-						<figure class="floatr">
-							<a href="https://github.com/stoversa/liri-node-app" target="_blank">
-								<img class="pimg" src="assets/images/liri.jpg" alt="Liri App">
-								<div class="overlay">Liri Bash Assistant</div>
-							</a>
-						</figure>
+			<div class="col-md-4 footer-extra-help">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Connect with Me</h3>
+					</div>
+					<div class="panel-body">
+						<ul class="list-inline">
+							<li>
+								<a href="https://github.com/stoversa" target="_blank" title="GitHub">
+									<img class="social-img" src="assets/images/github.png" alt="GitHub">
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/samuelstover" target="_blank" title="LinkedIn">
+									<img class="social-img" src="assets/images/linkedin.png" alt="LinkedIn">
+								</a>
+							</li>
+							<li>
+								<a href="https://stackoverflow.com/users/8909974/stoversa?tab=profile" target="_blank" title="StackOverflow">
+									<img class="social-img" src="assets/images/overflow.png" alt="StackOverflow">
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="cimg">
-				
-					<figure class="floatl">
-						<a href="https://github.com/stoversa/node_storefront" target="_blank">
-							<img class="pimg nofloat" src="assets/images/bamazonManager.gif" alt="Node Storefront">
-							<div class="overlay">Node Storefront</div>
-						</a>
-					</figure>
-				</div>
-			</section>
-
-			<aside>
-				<div class="h3border"><h3>Connect with Me</h3></div>
-				<ul class="social">
-					<li>
-						<a href="https://github.com/stoversa" target="_blank" title="GitHub">
-							<img src="assets/images/github.png" alt="GitHub">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/samuelstover" target="_blank" title="LinkedIn">
-							<img src="assets/images/linkedin.png" alt="LinkedIn">
-						</a>
-					</li>
-					<li>
-						<a href="https://stackoverflow.com/users/8909974/stoversa?tab=profile" target="_blank" title="StackOverflow">
-							<img src="assets/images/overflow.png" alt="StackOverflow">
-						</a>
-					</li>
-				</ul>
-			</aside>
-
-		</main>
-		<div class="footer-margin"></div>
+			</div>
+		</div>
 	</div>
-
-	<footer>
-		<div class="copyright">&#169; Copyright 2017 Samuel Stover</div>
+	<footer class="footer">
+		<div class="copyright">
+			&#169; Copyright 2017 Samuel Stover
+		</div>
 	</footer>
 
+	<!-- Necessary Bootstrap Jquery/JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
+
 </html>

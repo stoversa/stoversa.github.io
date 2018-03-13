@@ -1,70 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>About Me</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
+
 <body>
-	<div class="body-content">
-		
-		<header>
-			<div class="head-container">
-				<div class="name">
-					<h1>Sam Stover</h1>
-				</div>
-				<nav>
-					<ul>
-						<li><a href="index.html">About</a> |</li>
-						<li><a href="portfolio.html">Portfolio</a> |</li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand name" href="index.html">Sam Stover</a>
 			</div>
-		</header>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="index.html">About</a>
+				</li>
+				<li>
+					<a href="portfolio.html">Portfolio</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-		<main>
-			<section>
-				<div class="h2border"><h2>About Me</h2></div>
-					<img src="assets/images/face_150x225.jpg" alt="Cover Image">
-					<p>
-						<span>The Rust Belt's Native Son, Sam spent three years as a reference librarian in North Dakota (fun fact: the least visited state), before returning to the South for milder weather. He now helps librarians everyday by providing technical support for several essential products.</span>
-					</p>
-					<br />
-					<p>
-						<span>When he is not working with librarians or coding, Sam spends his time cooking, reading in libraries, and sipping coffee in Durham. He also collects too many books, a professional hazard from his library days.</span>
-					</p>
-			</section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 main-section footer-extra-help">
+				<div class="page-header">
+					<h1 class="section-header">About Me</h1>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="assets/images/face_150x225.jpg" alt="My Cover Image" class="img-thumbnail">
+					</div>
+					<div class="col-md-9">
+						<p>
+							<span class="main-text">The Rust Belt's Native Son, Sam spent three years as a reference librarian in North Dakota (fun fact: the least visited
+								state), before returning to the South for milder weather. He now helps librarians everyday by providing technical
+								support for several essential products.</span>
+						</p>
+						<br />
+						<p>
+							<span class="main-text">When he is not working with librarians or coding, Sam spends his time cooking, reading in libraries, and sipping coffee
+								in Durham. He also collects too many books, a professional hazard from his library days.</span>
+					</div>
+				</div>
+			</div>
 
-			<aside>
-				<div class="h3border"><h3>Connect with Me</h3></div>
-				<ul class="social">
-					<li>
-						<a href="https://github.com/stoversa" target="_blank" title="GitHub">
-							<img src="assets/images/github.png" alt="GitHub">
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/samuelstover" target="_blank" title="LinkedIn">
-							<img src="assets/images/linkedin.png" alt="LinkedIn">
-						</a>
-					</li>
-					<li>
-						<a href="https://stackoverflow.com/users/8909974/stoversa?tab=profile" target="_blank" title="StackOverflow">
-							<img src="assets/images/overflow.png" alt="StackOverflow">
-						</a>
-					</li>
-				</ul>
-			</aside>
-
-		</main>
-		<div class="footer-margin"></div>
+			<div class="col-md-4 col-sm-12 col-12 footer-extra-help">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Connect with Me</h3>
+					</div>
+					<div class="panel-body">
+						<ul class="list-inline">
+							<li>
+								<a href="https://github.com/stoversa" target="_blank" title="GitHub">
+									<img class="social-img" src="assets/images/github.png" alt="GitHub">
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/samuelstover" target="_blank" title="LinkedIn">
+									<img class="social-img" src="assets/images/linkedin.png" alt="LinkedIn">
+								</a>
+							</li>
+							<li>
+								<a href="https://stackoverflow.com/users/8909974/stoversa?tab=profile" target="_blank" title="StackOverflow">
+									<img class="social-img" src="assets/images/overflow.png" alt="StackOverflow">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<footer>
-		<div class="copyright">&#169; Copyright 2017 Samuel Stover</div>
+	<footer class="footer">
+		<div class="copyright">
+			&#169; Copyright 2017 Samuel Stover
+		</div>
 	</footer>
 
+	<!-- Necessary Bootstrap Jquery/JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
+
 </html>
